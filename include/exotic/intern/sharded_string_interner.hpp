@@ -42,4 +42,4 @@ private:
     std::array<Shard*, N> shards_;
 };
 
-}
+} // namespace exotic::intern
