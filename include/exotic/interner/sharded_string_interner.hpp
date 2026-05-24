@@ -11,7 +11,7 @@
 #include <functional>
 #include <string_view>
 
-namespace exotic::interner {
+namespace exotic::intern {
 
 template<std::size_t N>
 struct ShardedStringInterner {
