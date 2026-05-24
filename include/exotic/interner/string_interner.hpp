@@ -13,7 +13,7 @@
 #include <unordered_set>
 #include <iostream>
 
-namespace exotic::interner {
+namespace exotic::intern {
 
 class alignas(std::hardware_destructive_interference_size) StringInterner {
 public:
