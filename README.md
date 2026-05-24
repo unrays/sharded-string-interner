@@ -108,5 +108,3 @@ This project is intentionally designed as a learning-focused system rather than 
 This project is licensed under the Boost Software License. See the [LICENSE](LICENSE) file for details.
 
 <p align="center"><sub>© Félix-Olivier Dumas 2026</sub></p>
-
----
