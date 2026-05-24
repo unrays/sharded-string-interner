@@ -57,4 +57,4 @@ private:
     std::shared_mutex shared_mutex_;
 };
 
-}
+} // namespace exotic::intern
