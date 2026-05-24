@@ -213,4 +213,4 @@ private:
     memory_resource* ressource_;
 };
 
-}
+} // namespace exotic::memory
