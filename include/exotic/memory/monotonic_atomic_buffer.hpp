@@ -60,4 +60,4 @@ private:
     std::size_t capacity_;
 };
 
-}
+} // namespace exotic::memory
