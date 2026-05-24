@@ -36,4 +36,4 @@ protected:
     virtual bool do_is_equal(const memory_resource& other) const noexcept = 0;
 };
 
-}
+} // namespace exotic::memory
