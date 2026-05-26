@@ -25,7 +25,7 @@ public:
         }
     }
 
-    ~ShardedStringInterner() noexcept{
+    ~ShardedStringInterner() noexcept {
         for (auto* shard : shards_) {
             if (shard == nullptr) [[unlikely]] continue;
             delete shard;
