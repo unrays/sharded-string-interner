@@ -19,13 +19,13 @@ public:
     using Shard = StringInterner;
 
 public:
-    explicit sharded_string_interner(exotic::memory::memory_resource* upstream) {
+    explicit ShardedStringInterner(exotic::memory::memory_resource* upstream) {
         for (std::size_t i = 0; i < N; ++i) {
             shards_[i] = ::new Shard(exotic::memory::unsynchronized_chunk_allocator<char>(upstream));
         }
     }
 
-    ~sharded_string_interner() noexcept{
+    ~ShardedStringInterner() noexcept{
         for (auto* shard : shards_) {
             if (shard == nullptr) [[unlikely]] continue;
             delete shard;
